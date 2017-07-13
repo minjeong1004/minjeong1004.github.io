@@ -1,108 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<head>
+	<meta charset="utf-8" />
+    <title> 송민정 프로필 page </title>
+    <style type="text/css">
+        a{text-decoration: none;}
+    </style>
+</head>
+<body bgcolor="#F8E0E6">
+    <p align="right"><b>
+        <a href="index_pro.html">메인</a>
+        <a href="profile.html">프로필</a>
+        </b></p><br><br>
+    
+    <center>
+        <font size="7" face="휴먼매직체">송민정 프로필</font><br><br>
+        <img src="minjeong.png" width="400" border="2"></a>
+    </center><br><br>
 
-        <!-- Compressed CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css"  />
+	<header>
+		<h1><a href="file:///C:/Bitnami/wampstack-7.1.2-0/apache2/htdocs/index.html">간단한 소개</a></h1>
+	</header>
+	<center>
+		<ol>
+            <font size="5" face="휴먼매직체">송민정 프로필
+			    <li>이름 : 송민정</li><br>
+                <li>출생 : 1997년 10월 1일</li><br>
+                <li>학력 : 서울대학교 수학교육과</li><br>
+                <li>이메일 : minjeong97@snu.ac.kr</li><br>
 
-        <!-- Compressed JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js" ></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/plugins/foundation.zf.responsiveAccordionTabs.min.js"></script>
-        
-    </head>
-    <body>
-        <form data-abide novalidate>
-            <div class="row">
-                <div class="columns">
-                <div data-abide-error class="alert callout" style="display: none;">
-                    <p><i class="fi-alert"></i> There are some errors in your form.</p>
-                </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="small-12 columns">
-                <label>Number Required
-                    <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
-                    <span class="form-error">
-                    Yo, you had better fill this out, it's required.
-                    </span>
-                </label>
-                <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
-                </div>
-                <div class="small-12 columns">
-                <label>Nothing Required!
-                    <input type="text" placeholder="Use me, or don't" aria-describedby="exampleHelpTex" data-abide-ignore>
-                </label>
-                <p class="help-text" id="exampleHelpTex">This input is ignored by Abide using `data-abide-ignore`</p>
-                </div>
-                <div class="small-12 columns">
-                <label>Password Required
-                    <input type="password" id="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText" required >
-                    <span class="form-error">
-                    I'm required!
-                    </span>
-                </label>
-                <p class="help-text" id="exampleHelpText">Enter a password please.</p>
-                </div>
-                <div class="small-12 columns">
-                <label>Re-enter Password
-                    <input type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
-                    <span class="form-error">
-                    Hey, passwords are supposed to match!
-                    </span>
-                </label>
-                <p class="help-text" id="exampleHelpText2">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="medium-6 columns">
-                <label>URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
-                    <input type="text" placeholder="http://foundation.zurb.com" pattern="url">
-                </label>
-                </div>
-                <div class="medium-6 columns">
-                <label>European Cars, Choose One, it can't be the blank option.
-                    <select id="select" required>
-                    <option value=""></option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                    </select>
-                </label>
-                </div>
-            </div>
-            <div class="row">
-                <fieldset class="medium-6 columns">
-                <legend>Choose Your Favorite, and this is required, so you have to pick one.</legend>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Blue</label>
-                <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
-                </fieldset>
-                <fieldset class="medium-6 columns">
-                <legend>Choose Your Favorite - not required, you can leave this one blank.</legend>
-                <input type="radio" name="pockets" value="Red" id="pocketsRed"><label for="pocketsRed">Red</label>
-                <input type="radio" name="pockets" value="Blue" id="pocketsBlue"><label for="pocketsBlue">Blue</label>
-                <input type="radio" name="pockets" value="Yellow" id="pocketsYellow"><label for="pocketsYellow">Yellow</label>
-                </fieldset>
-                <fieldset class="medium-6 columns">
-                <legend>Check these out</legend>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
-                <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
-                </fieldset>
-            </div>
-            <div class="row">
-                <fieldset class="medium-6 columns">
-                <button class="button" type="submit" value="Submit">Submit</button>
-                </fieldset>
-                <fieldset class="medium-6 columns">
-                <button class="button" type="reset" value="Reset">Reset</button>
-                </fieldset>
-            </div>
-        </form>
-    </body>
-
+			    <li><a href="file:///C:/Bitnami/wampstack-7.1.2-0/apache2/htdocs/page_vc.html">좋아하는 캐릭터 : 심플브라더스</a></li>
+			    <li><a href="file:///C:/Bitnami/wampstack-7.1.2-0/apache2/htdocs/page_op.html">연산자</a></li>
+            </font>
+		</ol>
+	</center>
+    <hr color="#ccccc" size="1"><br>
+</body>
 </html>
